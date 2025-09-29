@@ -3,6 +3,8 @@ import { prismaAdapter } from 'better-auth/adapters/prisma';
 import { organization } from 'better-auth/plugins/organization';
 import { nextCookies } from 'better-auth/next-js';
 import { admin } from 'better-auth/plugins/admin';
+import { prisma } from './prisma';
+import { resend } from './resend';
 import VerificationEmail from '@/components/emails/verification-email';
 import ForgotPasswordEmail from '@/components/emails/forgot-password-email';
 
