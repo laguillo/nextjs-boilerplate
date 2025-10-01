@@ -1,3 +1,4 @@
+import { ModeToggle } from '@/components/shared/mode-toggle';
 import { Button } from '@/components/ui/button';
 import { SITE_NAME } from '@/constants/data';
 import { Github } from 'lucide-react';
@@ -22,6 +23,7 @@ export default function Home() {
             <span className='text-xl font-bold'>{SITE_NAME}</span>
           </div>
           <div className='flex items-center gap-2'>
+            <ModeToggle />
             <Button size={'icon'} variant='outline' asChild>
               <Link
                 href='https://github.com/laguillo/nextjs-boilerplate'
