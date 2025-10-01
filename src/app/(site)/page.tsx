@@ -182,7 +182,7 @@ export default function Home() {
             <div className='text-center'>
               <h3 className='mb-4 text-xl font-semibold'>Frontend</h3>
               <ul className='space-y-2 text-gray-600 dark:text-gray-300'>
-                <li>• Next.js 15 con App Router</li>
+                <li>• Next.js 15 App Router</li>
                 <li>• React Server Components</li>
                 <li>• TypeScript</li>
                 <li>• Tailwind CSS</li>
