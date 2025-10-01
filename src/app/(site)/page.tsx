@@ -22,11 +22,17 @@ export default function Home() {
             <span className='text-xl font-bold'>{SITE_NAME}</span>
           </div>
           <div className='flex items-center gap-2'>
-            <Button size={'icon'} variant='outline'>
-              <Github size={20} />
+            <Button size={'icon'} variant='outline' asChild>
+              <Link
+                href='https://github.com/laguillo/nextjs-boilerplate'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <Github />
+              </Link>
             </Button>
-            <Button variant='outline'>
-              <Link href='/dashboard'>Ir al Dashboard</Link>
+            <Button variant='outline' asChild>
+              <Link href='/dashboard'>Go to Dashboard</Link>
             </Button>
           </div>
         </nav>
@@ -37,19 +43,19 @@ export default function Home() {
         <div className='mx-auto max-w-4xl'>
           <h1 className='mb-6 text-5xl font-bold tracking-tight md:text-6xl'>
             Next.js Boilerplate
-            <span className='text-blue-600 dark:text-blue-400'> Moderno</span>
+            <span className='text-blue-600 dark:text-blue-400'> Modern</span>
           </h1>
           <p className='mx-auto mb-8 max-w-2xl text-xl text-gray-600 dark:text-gray-300'>
-            Un starter completo con las mejores herramientas para construir
-            aplicaciones web full-stack. Autenticación, base de datos, UI
-            components y más, todo configurado y listo para usar.
+            A complete starter with the best tools to build full-stack web
+            applications. Authentication, database, UI components and more, all
+            configured and ready to use.
           </p>
           <div className='flex flex-col justify-center gap-4 sm:flex-row'>
             <Button size='lg' className='px-8 text-base'>
-              Comenzar Ahora
+              Get Started Now
             </Button>
             <Button variant='outline' size='lg' className='px-8 text-base'>
-              Ver Documentación
+              View Documentation
             </Button>
           </div>
         </div>
@@ -59,11 +65,11 @@ export default function Home() {
       <section className='container mx-auto px-6 py-20'>
         <div className='mb-16 text-center'>
           <h2 className='mb-4 text-3xl font-bold md:text-4xl'>
-            Todo lo que necesitas incluido
+            Everything you need included
           </h2>
           <p className='mx-auto max-w-2xl text-lg text-gray-600 dark:text-gray-300'>
-            Las mejores herramientas del ecosistema, pre-configuradas y
-            optimizadas para tu productividad
+            The best tools from the ecosystem, pre-configured and optimized for
+            your productivity
           </p>
         </div>
 
@@ -81,8 +87,8 @@ export default function Home() {
             </div>
             <h3 className='mb-2 text-xl font-semibold'>Next.js 15</h3>
             <p className='text-gray-600 dark:text-gray-300'>
-              Framework React con App Router, Server Components y las últimas
-              optimizaciones de rendimiento.
+              React framework with App Router, Server Components and the latest
+              performance optimizations.
             </p>
           </div>
 
@@ -105,8 +111,8 @@ export default function Home() {
             </div>
             <h3 className='mb-2 text-xl font-semibold'>Better Auth</h3>
             <p className='text-gray-600 dark:text-gray-300'>
-              Autenticación moderna y segura con múltiples proveedores, sessions
-              y gestión de usuarios completa.
+              Modern and secure authentication with multiple providers, sessions
+              and complete user management.
             </p>
           </div>
 
@@ -129,8 +135,8 @@ export default function Home() {
             </div>
             <h3 className='mb-2 text-xl font-semibold'>Prisma ORM</h3>
             <p className='text-gray-600 dark:text-gray-300'>
-              ORM type-safe con migraciones, Prisma Studio y soporte para
-              múltiples bases de datos.
+              Type-safe ORM with migrations, Prisma Studio and support for
+              multiple databases.
             </p>
           </div>
 
@@ -153,8 +159,8 @@ export default function Home() {
             </div>
             <h3 className='mb-2 text-xl font-semibold'>shadcn/ui + Tailwind</h3>
             <p className='text-gray-600 dark:text-gray-300'>
-              Componentes hermosos y accesibles con Tailwind CSS para un
-              desarrollo UI rápido y consistente.
+              Beautiful and accessible components with Tailwind CSS for fast and
+              consistent UI development.
             </p>
           </div>
         </div>
@@ -165,10 +171,10 @@ export default function Home() {
         <div className='container mx-auto px-6'>
           <div className='mb-16 text-center'>
             <h2 className='mb-4 text-3xl font-bold md:text-4xl'>
-              Stack Tecnológico
+              Technology Stack
             </h2>
             <p className='text-lg text-gray-600 dark:text-gray-300'>
-              Las tecnologías más modernas y confiables del ecosistema
+              The most modern and reliable technologies from the ecosystem
             </p>
           </div>
 
@@ -196,7 +202,7 @@ export default function Home() {
             </div>
 
             <div className='text-center'>
-              <h3 className='mb-4 text-xl font-semibold'>Herramientas</h3>
+              <h3 className='mb-4 text-xl font-semibold'>Tools</h3>
               <ul className='space-y-2 text-gray-600 dark:text-gray-300'>
                 <li>• ESLint + Prettier</li>
                 <li>• Bun package manager</li>
@@ -213,7 +219,7 @@ export default function Home() {
       <section className='container mx-auto px-6 py-20'>
         <div className='mx-auto max-w-3xl text-center'>
           <h2 className='mb-8 text-3xl font-bold md:text-4xl'>
-            Comienza en segundos
+            Get started in seconds
           </h2>
           <div className='rounded-lg bg-gray-900 p-8 text-left dark:bg-gray-950'>
             <div className='mb-4 flex items-center'>
@@ -234,8 +240,8 @@ export default function Home() {
             </code>
           </div>
           <p className='mt-6 text-gray-600 dark:text-gray-300'>
-            ¡Y ya tienes una aplicación full-stack corriendo con autenticación,
-            base de datos y UI profesional!
+            And you already have a full-stack application running with
+            authentication, database and professional UI!
           </p>
         </div>
       </section>
@@ -244,25 +250,23 @@ export default function Home() {
       <section className='bg-gradient-to-r from-blue-600 to-purple-600 py-20'>
         <div className='container mx-auto px-6 text-center'>
           <h2 className='mb-4 text-3xl font-bold text-white md:text-4xl'>
-            ¿Listo para empezar tu próximo proyecto?
+            Ready to start your next project?
           </h2>
           <p className='mx-auto mb-8 max-w-2xl text-xl text-blue-100'>
-            Ahorra semanas de configuración y enfócate en lo que realmente
-            importa: construir tu producto.
+            Save weeks of configuration and focus on what really matters:
+            building your product.
           </p>
           <div className='flex flex-col justify-center gap-4 sm:flex-row'>
-            <Button
+            {/* <Button
               size='lg'
               className='bg-white px-8 text-base text-gray-900 hover:bg-gray-100'
             >
-              Descargar Boilerplate
-            </Button>
-            <Button
-              variant='outline'
-              size='lg'
-              className='border-white px-8 text-base text-white hover:bg-white hover:text-gray-900'
-            >
-              Ver en GitHub
+              Download Boilerplate
+            </Button> */}
+            <Button variant='outline' size='lg' asChild>
+              <Link href='https://github.com/tu-usuario/nextjs-boilerplate'>
+                View on GitHub
+              </Link>
             </Button>
           </div>
         </div>
@@ -287,7 +291,7 @@ export default function Home() {
                 href='#'
                 className='text-gray-400 transition-colors hover:text-white'
               >
-                Documentación
+                Documentation
               </a>
               <a
                 href='#'
@@ -299,14 +303,13 @@ export default function Home() {
                 href='#'
                 className='text-gray-400 transition-colors hover:text-white'
               >
-                Ejemplos
+                Examples
               </a>
             </div>
           </div>
           <div className='mt-8 border-t border-gray-800 pt-8 text-center text-gray-400'>
             <p>
-              &copy; 2025 Next.js Boilerplate. Construido con ❤️ para
-              desarrolladores.
+              &copy; 2025 Next.js Boilerplate. Built with ❤️ for developers.
             </p>
           </div>
         </div>
